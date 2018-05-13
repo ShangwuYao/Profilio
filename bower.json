@@ -1,0 +1,14 @@
+{
+  "name": "Profilio",
+  "version": "0.0.1",
+  "authors": [
+    "David Qiu <david@davidqiu.com>"
+  ],
+  "description": "Profilio is a modularized personal website framework.",
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.7",
+    "components-font-awesome": "~4.7.0",
+    "bootswatch-dist": "sandstone"
+  }
+}

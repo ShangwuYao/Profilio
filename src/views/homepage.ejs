@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- include: common head -->
+  <% include common-head %>
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="/stylesheets/common.css">
+  <link rel="stylesheet" href="/stylesheets/homepage.css">
+  <!-- javascripts -->
+  <script src="/javascripts/common.js"></script>
+  <script src="/javascripts/homepage.js"></script>
+  <!-- title -->
+  <title>David Qiu's</title>
+</head>
+<body>
+  <!-- coral: homecover -->
+  <div class="d-coral d-coral-homecover d-homecover">
+    <span class="d-homecover-left"></span>
+    <span class="d-homecover-right"></span>
+    <span class="d-homecover-clear"></span>
+  </div>
+  <div class="d-coral d-coral-homecover-background d-homecover"></div>
+  <!-- coral: homecover content -->
+  <div class="d-coral d-coral-homecover-content d-homecover">
+    <h1 class="d-homecover-title visible-md visible-lg"><!-- API: configurations.homecover.title --></h1>
+    <h3 class="d-homecover-subtitle visible-md visible-lg"><!-- API: configurations.homecover.subtitle --></h3>
+    <div class="d-homecover-hint-scroll"><i class="icon glyphicon glyphicon-menu-up"></i></div>
+  </div>
+  <!-- coral: profile -->
+  <div class="d-coral d-coral-profile" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12"><h2 class="d-coral-title">Profile</h2></div>
+        <div class="col-xs-12 col-sm-12"><hr></div>
+        <div class="col-xs-12 col-sm-6">
+          <h3 class="d-coral-subtitle">About Me</h3>
+          <div class="d-profile-introduction"><!-- API: profile.introduction --></div>
+        </div>
+        <div class="visible-xs col-xs-12"><hr></div>
+        <div class="col-xs-12 col-sm-6">
+          <h3 class="d-coral-subtitle">Details</h3>
+          <div class="d-template d-template-profile-detail-item">
+            <div class="d-profile-detail">
+              <div>
+                <span><i class="icon"></i></span>
+                <span class="hidden-xs title"></span>
+                <span class="hidden-sm hidden-md hidden-lg text"></span>
+              </div>
+              <div class="hidden-xs text"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coral: experiences -->
+  <div class="d-coral d-coral-experiences" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12"><h2 class="d-coral-title">Experiences</h2></div>
+        <div class="d-template d-template-experience-anchor"></div>
+        <div class="d-template d-template-experience-section">
+          <div class="col-sm-12 col-md-12"><hr></div>
+          <div class="col-sm-12 col-md-12"><h3 class="d-coral-subtitle"></h3></div>
+        </div>
+        <div class="d-template d-template-experience-item">
+          <div class="d-experience-item">
+            <div class="col-sm-12 col-md-4">
+              <div class="d-experience-institution"></div>
+              <div class="d-experience-position"></div>
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <div class="hidden-xs d-experience-description"></div>
+              <div class="d-experience-link" style="display: none;"><a href="" target="_blank"><i class="icon fa fa-link"></i><span class="text"></span></a></div>
+              <div class="visible-md visible-lg"><span class="d-experience-location"><i class="icon fa fa-map-marker"></i><span class="text"></span></span> | <span class="d-experience-date"><i class="icon fa fa-calendar"></i><span class="text"></span></span></div>
+              <div class="visible-xs visible-sm d-experience-location"><i class="icon fa fa-map-marker"></i><span class="text"></span></div>
+              <div class="visible-xs visible-sm d-experience-date"><i class="icon fa fa-calendar"></i><span class="text"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="d-template d-template-experience-item-indent">
+          <div class="col-sm-12 col-md-12"><div class="d-item-indent d-experience-item-indent"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coral: abilities -->
+  <div class="d-coral d-coral-abilities" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12"><h2 class="d-coral-title">Abilities</h2></div>
+        <div class="d-template d-template-ability-anchor"></div>
+        <div class="d-template d-template-ability-section">
+          <div class="col-xs-12 col-sm-12"><hr></div>
+          <div class="col-xs-12 col-sm-12"><h3 class="d-coral-subtitle"></h3></div>
+        </div>
+        <div class="d-template d-template-ability-item">
+          <div class="col-xs-12 col-sm-6">
+            <div class="d-ability-item" onmouseover="handler_onAbilityItemMouseOver(event, this)" onmouseout="handler_onAbilityItemMouseOut(event, this)">
+              <span class="name"></span>
+              <span class="rate"></span>
+            </div>
+          </div>
+        </div>
+        <div class="d-template d-template-ability-item-star-solid">
+          <i class="glyphicon glyphicon-star star"></i>
+        </div>
+        <div class="d-template d-template-ability-item-star-empty">
+          <i class="glyphicon glyphicon-star-empty star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coral: projects -->
+  <div class="d-coral d-coral-projects" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12"><h2 class="d-coral-title">Projects</h2></div>
+        <div class="col-xs-12 col-sm-12"><hr></div>
+        <div class="d-template d-template-project-anchor"></div>
+        <div class="d-template d-template-project-item">
+          <div class="d-project-item hidden-xs col-sm-8">
+            <div class="name"></div>
+            <div class="organization"></div>
+            <div class="description"></div>
+            <div class="link" style="display: none;"><a href="" target="_blank"><i class="icon fa fa-link"></i><span class="text"></span></a></div>
+            <div><span class="location"><i class="icon fa fa-map-marker"></i><span class="text"></span></span> | <span class="date"><i class="icon fa fa-calendar"></i><span class="text"></span></span></div>
+          </div>
+          <div class="d-project-item col-xs-6 col-sm-4">
+            <a href="javascript:void(0)" target="_blank" class="link-mobile">
+              <div class="image"></div>
+              <div class="name visible-xs"></div>
+            </a>
+          </div>
+        </div>
+        <div class="d-template d-template-project-item-indent">
+          <div class="hidden-xs col-sm-12"><div class="d-item-indent d-project-item-indent"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coral: honors -->
+  <div class="d-coral d-coral-honors" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12"><h2 class="d-coral-title">Honors</h2></div>
+        <div class="d-template d-template-honor-anchor"></div>
+        <div class="d-template d-template-honor-section">
+          <div class="col-sm-12 col-md-12"><hr></div>
+          <div class="col-sm-12 col-md-12"><h3 class="d-coral-subtitle"></h3></div>
+          <div class="col-sm-12 col-md-12"><div class="d-honor-section-institution"></div></div>
+        </div>
+        <div class="d-template d-template-honor-item">
+          <div class="d-honor-item">
+            <div class="col-sm-12 col-md-12">
+              <div class="title"><span class="prize"></span>, <span class="activity"></span></div>
+              <div class="host hidden-xs" style="display: none;"></div>
+              <div><span class="location"><i class="icon fa fa-map-marker"></i><span class="text"></span></span> | <span class="date"><i class="icon fa fa-calendar"></i><span class="text"></span></span><span class="link-wrap hidden-xs" style="display: none;"> | <span class="link"><a href="" target="_blank"><i class="icon fa fa-link"></i><span class="text">Supplementary Document</span></a></span></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="d-template d-template-honor-item-indent">
+          <div class="col-sm-12 col-md-12"><div class="d-item-indent d-honor-item-indent"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coral: activities -->
+  <div class="d-coral d-coral-activities" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12"><h2 class="d-coral-title">Activities</h2></div>
+        <div class="d-template d-template-activity-anchor"></div>
+        <div class="d-template d-template-activity-section">
+          <div class="col-sm-12 col-md-12"><hr></div>
+          <div class="col-sm-12 col-md-12"><h3 class="d-coral-subtitle"></h3></div>
+          <div class="col-sm-12 col-md-12"><div class="d-activity-section-institution"></div></div>
+        </div>
+        <div class="d-template d-template-activity-item">
+          <div class="d-activity-item">
+            <div class="col-sm-12 col-md-12">
+              <div class="title"><span class="position"></span>, <span class="activity"></span></div>
+              <div class="host hidden-xs" style="display: none;"></div>
+              <div><span class="location"><i class="icon fa fa-map-marker"></i><span class="text"></span></span> | <span class="date"><i class="icon fa fa-calendar"></i><span class="text"></span></span><span class="link-wrap hidden-xs" style="display: none;"> | <span class="link"><a href="" target="_blank"><i class="icon fa fa-link"></i><span class="text">Supplementary Document</span></a></span></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="d-template d-template-activity-item-indent">
+          <div class="col-sm-12 col-md-12"><div class="d-item-indent d-activity-item-indent"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coral: people -->
+  <div class="d-coral d-coral-people" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12"><h2 class="d-coral-title">People</h2></div>
+        <div class="d-template d-template-people-anchor"></div>
+        <div class="d-template d-template-people-section">
+          <div class="col-xs-12 col-sm-12"><hr></div>
+          <div class="col-xs-12 col-sm-12"><h3 class="d-coral-subtitle"></h3></div>
+          <div class="col-xs-12 col-sm-12"><div class="d-people-section-institution"></div></div>
+        </div>
+        <div class="d-template d-template-people-item">
+          <div class="d-people-item hidden-xs col-sm-8">
+            <div class="name"></div>
+            <div class="position"></div>
+            <div class="institution"></div>
+            <div class="description"></div>
+          </div>
+          <div class="d-people-item col-xs-6 col-sm-4">
+            <div class="photo"></div>
+            <div class="name visible-xs"></div>
+          </div>
+        </div>
+        <div class="d-template d-template-people-item-indent">
+          <div class="hidden-xs col-sm-12"><div class="d-item-indent d-people-item-indent"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coral: supplements -->
+  <div class="d-coral d-coral-supplements" style="display: none;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12"><h2 class="d-coral-title">Supplements</h2></div>
+        <div class="d-template d-template-supplement-anchor"></div>
+        <div class="d-template d-template-supplement-section">
+          <div class="col-xs-12 col-sm-12"><hr></div>
+          <div class="col-xs-12 col-sm-12"><h3 class="d-coral-subtitle"></h3></div>
+        </div>
+        <div class="d-template d-template-supplement-item">
+          <div class="col-xs-12 col-sm-6">
+            <div class="d-supplement-item"><a href="" target="_blank"><i class="icon"></i><span class="title"></span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coral: contact -->
+  <div class="d-coral d-coral-contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12"><h2 class="d-coral-title">Contact</h2></div>
+        <div class="col-xs-12 col-sm-12"><hr></div>
+        <div class="d-template d-template-contact-way">
+          <div class="col-xs-12 col-sm-6">
+            <div class="d-contact-item">
+              <a class="link" href="javascript:void(0)" target="_blank">
+                <i class="icon"></i>
+                <span class="text"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12"><hr></div>
+        <div class="col-xs-12 col-sm-12">
+          <div class="d-coral-contact-footer">
+            <div>Copyright &copy; <span class="d-copyright-year">2016</span>, David Qiu. All rights reserved.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+body {
+  background-color: #333;
+}
+
+.d-coral .container {
+  max-width: 810px !important; 
+}
+
+.d-coral-homecover {
+  padding: 0;
+  z-index: -100;
+  position: fixed;
+}
+.d-homecover .d-homecover-left {
+  /* background-image: url(API: configurations.homecover.left) */
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  float: left;
+}
+.d-homecover .d-homecover-right {
+  /* background-image: url(API: configurations.homecover.right) */
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  float: left;
+}
+.d-homecover .d-homecover-clear {
+  float: none;
+}
+
+.d-coral-homecover-background {
+  opacity: 0.01;
+  background-color: #333;
+  z-index: -90;
+  position: fixed;
+}
+
+.d-coral-homecover-content {
+
+}
+.d-homecover .d-homecover-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 0 0 12px #666;
+}
+.d-homecover .d-homecover-subtitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 100;
+  text-shadow: 0 0 12px #666;
+}
+.d-homecover .d-homecover-hint-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 100;
+}
+.d-homecover .d-homecover-hint-scroll i.icon {
+  font-size: 32px;
+  color: #fff;
+}
+
+.d-coral-profile {
+  ;
+}
+.d-coral-profile .d-profile-detail .icon {
+  width: 16px;
+  text-align: center;
+  margin-right: 5px;
+}
+.d-coral-profile .d-profile-detail .title {
+  font-weight: 600;
+}
+.d-coral-profile .d-profile-detail span.text {
+  margin-bottom: 10px;
+}
+.d-coral-profile .d-profile-detail div.text {
+  margin-bottom: 20px;
+}
+
+.d-coral-experiences {
+  ;
+}
+.d-coral-experiences .d-experience-item .icon {
+  width: 16px;
+  text-align: center;
+  margin-right: 5px;
+}
+.d-coral-experiences .d-experience-item .d-experience-institution {
+  font-size: 18px;
+  font-weight: 600;
+}
+.d-coral-experiences .d-experience-item .d-experience-position {
+  margin-bottom: 5px;
+}
+.d-coral-experiences .d-experience-item .d-experience-description {
+  margin-bottom: 5px;
+}
+
+.d-coral-abilities {
+  ;
+}
+.d-coral-abilities .d-ability-item {
+  height: 32px;
+  padding: 4px 0;
+}
+.d-coral-abilities .d-ability-item .name {
+  float: left;
+  height: 24px;
+}
+.d-coral-abilities .d-ability-item .rate {
+  float: right;
+  height: 24px;
+}
+.d-coral-abilities .d-ability-item .rate i.star {
+  margin-left: 2px;
+  font-size: 14px;
+  color: #333;
+  opacity: 0.5;
+  vertical-align: middle;
+}
+
+.d-coral-projects {
+  ;
+}
+.d-coral-projects .d-project-item.hidden-xs .name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.d-coral-projects .d-project-item .name.visible-xs {
+  margin-bottom: 20px;
+}
+.d-coral-projects .d-project-item .description {
+  margin: 5px 0;
+}
+.d-coral-projects .d-project-item .icon {
+  width: 16px;
+  text-align: center;
+  margin-right: 5px;
+}
+.d-coral-projects .d-project-item .image {
+  width: 100%;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.d-coral-honors {
+  ;
+}
+.d-coral-honors .d-coral-subtitle {
+  margin-bottom: 5px;
+}
+.d-coral-honors .d-honor-section-institution {
+  margin-bottom: 20px;
+}
+.d-coral-honors .d-honor-item .title {
+  font-weight: 600;
+}
+.d-coral-honors .d-honor-item .icon {
+  width: 16px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.d-coral-activities {
+  ;
+}
+.d-coral-activities .d-coral-subtitle {
+  margin-bottom: 5px;
+}
+.d-coral-activities .d-activity-section-institution {
+  margin-bottom: 20px;
+}
+.d-coral-activities .d-activity-item .title {
+  font-weight: 600;
+}
+.d-coral-activities .d-activity-item .icon {
+  width: 16px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.d-coral-people {
+  ;
+}
+.d-coral-people .d-coral-subtitle {
+  margin-bottom: 5px;
+}
+.d-coral-people .d-people-section-institution {
+  margin-bottom: 20px;
+}
+.d-coral-people .d-people-item.hidden-xs .name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.d-coral-people .d-people-item .name.visible-xs {
+  margin-bottom: 20px;
+}
+.d-coral-people .d-people-item .description {
+  margin-top: 5px;
+}
+.d-coral-people .d-people-item .photo {
+  width: 100%;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.d-coral-supplements {
+  ;
+}
+.d-coral-supplements .d-supplement-item {
+  height: 32px;
+  padding: 4px 0;
+}
+.d-coral-supplements .d-supplement-item .icon {
+  width: 16px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.d-coral-contact {
+  background-color: #333;
+  color: #fff;
+}
+.d-coral-contact hr {
+  border-top-color: #666;
+}
+.d-coral-contact a {
+  color: #fff;
+  opacity: 0.5;
+}
+.d-coral-contact a:link {
+  color: #fff;
+  opacity: 0.5;
+}
+.d-coral-contact a:visited {
+  color: #fff;
+  opacity: 0.5;
+}
+.d-coral-contact a:hover {
+  color: #fff;
+  opacity: 1.0;
+}
+.d-coral-contact a:active {
+  color: #fff;
+  opacity: 1.0;
+}
+.d-coral-contact .d-contact-item {
+  margin: 10px 0;
+}
+.d-coral-contact .d-contact-item i.icon {
+  vertical-align: middle;
+  font-size: 36px;
+  width: 36px;
+}
+.d-coral-contact .d-contact-item span.text {
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.d-coral-contact-footer {
+  text-align: center;
+  color: #666;
+}
